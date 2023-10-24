@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/analytics",
-  "description": "Uniswap analytics",
-  "repository": "https://github.com/Uniswap/analytics",
+  "name": "@pipiyo/analytics",
+  "description": "Pipiyo analytics",
+  "repository": "https://github.com/pipiyo-labs/analytics",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
