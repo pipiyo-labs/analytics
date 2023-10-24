@@ -1,19 +1,19 @@
 # Uniswap Labs Analytics
-[![npm](https://img.shields.io/npm/v/@uniswap/analytics)](https://www.npmjs.com/package/@uniswap/analytics)
+[![npm](https://img.shields.io/npm/v/@uniswap/analytics)](https://www.npmjs.com/package/@pipiyo/analytics)
 
-The `@uniswap/analytics` package is a [npm package](https://www.npmjs.com/package/@uniswap/analytics) of React components and functions used to provide Analytics capability to Uniswap Labs products.
+The `@uniswap/analytics` package is a [npm package](https://www.npmjs.com/package/@pipiyo/analytics) of React components and functions used to provide Analytics capability to Uniswap Labs products.
 
-This package is intended to be used with the [@uniswap/analytics-events](https://www.npmjs.com/package/@uniswap/analytics-events) package, which provides the constant definitions used inside this package.
+This package is intended to be used with the [@uniswap/analytics-events](https://www.npmjs.com/package/@pipiyo/analytics-events) package, which provides the constant definitions used inside this package.
 
 ## Installation
 
 Install via `npm` or `yarn`.
 
 ```js
-yarn add @uniswap/analytics
+yarn add @pipiyo/analytics
 ```
 ```js
-npm i --save @uniswap/analytics
+npm i --save @pipiyo/analytics
 ```
 
 Make sure the environment variable `REACT_APP_STAGING` is set to `false` in production.
@@ -31,10 +31,10 @@ To install in the relevant repo, copy the tarball to the root of your project's 
 ```bash
 # yarn
 yarn cache clean
-yarn add file:uniswap-analytics-dev.tgz
+yarn add file:pipiyo-analytics-dev.tgz
 
 # npm
-npm install uniswap-analytics-dev.tgz
+npm install pipiyo-analytics-dev.tgz
 ```
 
 Alternatively, you can install with a direct file reference from your local `analytics` repository.
@@ -93,20 +93,20 @@ sendAnalyticsEvent(EventName.PAGE_CLICKED, {
 
 There is also a built in React component that logs an event when it is first mounted. You may use it as a wrapper:
 ```js
-import { Trace } from '@uniswap/analytics'
-import { EventName, ModalName } from '@uniswap/analytics-events'
+import { Trace } from '@pipiyo/analytics'
+import { EventName, ModalName } from '@pipiyo/analytics-events'
 
 
 <Trace name={EventName.TOKEN_SELECTOR_OPENED} modal={ModalName.TOKEN_SELECTOR}>
     <SomeComponent/>
 </Trace>
 ```
-Depending on the context that `<Trace/>` is used in, you may have to define new values in [@uniswap/analytics-events](https://www.npmjs.com/package/@uniswap/analytics-events) for the enums that are passed in as arguments such: `BrowserEvent`, `EventName`, `ModalName`, `ElementName`.
+Depending on the context that `<Trace/>` is used in, you may have to define new values in [@pipiyo/analytics-events](https://www.npmjs.com/package/@uniswap/analytics-events) for the enums that are passed in as arguments such: `BrowserEvent`, `EventName`, `ModalName`, `ElementName`.
 
 There is a React component that wraps event callbacks with logging logic:
 ```js
-import { TraceEvent } from '@uniswap/analytics'
-import { EventName, ElementName } from '@uniswap/analytics-events'
+import { TraceEvent } from '@pipiyo/analytics'
+import { EventName, ElementName } from '@pipiyo/analytics-events'
 
 <TraceEvent events={[Event.onClick]} name={EventName.SWAP_MAX_TOKEN_AMOUNT_SELECTED} element={ElementName.MAX_TOKEN_AMOUNT_BUTTON}>
     <SomeButton onClick={onClickHandler}/>
