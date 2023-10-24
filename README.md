@@ -1,7 +1,7 @@
-# Uniswap Labs Analytics
+# Pipiyo Labs Analytics
 [![npm](https://img.shields.io/npm/v/@uniswap/analytics)](https://www.npmjs.com/package/@pipiyo/analytics)
 
-The `@uniswap/analytics` package is a [npm package](https://www.npmjs.com/package/@pipiyo/analytics) of React components and functions used to provide Analytics capability to Uniswap Labs products.
+The `@pipiyo/analytics` package is a [npm package](https://www.npmjs.com/package/@pipiyo/analytics) of React components and functions used to provide Analytics capability to pipiyo Labs products.
 
 This package is intended to be used with the [@uniswap/analytics-events](https://www.npmjs.com/package/@pipiyo/analytics-events) package, which provides the constant definitions used inside this package.
 
