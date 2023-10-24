@@ -116,7 +116,7 @@ import { EventName, ElementName } from '@pipiyo/analytics-events'
 Finally, you can set properties about the user of the application:
 ```js
 import { user } from 'analytics'
-import { CustomUserProperties } from '@uniswap/analytics-events'
+import { CustomUserProperties } from '@pipiyo/analytics-events'
 
 user.set(CUSTOM_USER_PROPERTIES.DARK_MODE, isDarkMode)
 ```
@@ -125,8 +125,8 @@ user.set(CUSTOM_USER_PROPERTIES.DARK_MODE, isDarkMode)
 
 This package is used into a few of Uniswap Labs repos:
 
-- [Interface](https://github.com/Uniswap/interface)
-- [Docs](https://github.com/Uniswap/docs)
+- [Interface](https://github.com/pipiyo-labs/interface)
+- [Docs](https://github.com/pipiyo-labs/docs)
 
 
 ## Legal notice
