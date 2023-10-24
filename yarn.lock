@@ -2218,7 +2218,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pipiyo/analytics@^0.0.2, @pipiyo/analytics@workspace:.":
+"@pipiyo/analytics@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@pipiyo/analytics@npm:0.0.2"
+  dependencies:
+    "@amplitude/analytics-browser": ^1.5.8
+    "@pipiyo/analytics": ^1.0.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: fd4e01f98c4ac87c8e80be49d6ddce74bfc0d95c4cc4f7ffb1afda024e201e29f718086f0436a0beecffc804929457c6acb5366f90e34cb5035a182bdf109d24
+  languageName: node
+  linkType: hard
+
+"@pipiyo/analytics@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@pipiyo/analytics@npm:1.0.1"
+  dependencies:
+    "@amplitude/analytics-browser": ^1.5.8
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: be8f4ebfe733744930ecde08bfb5df5e002be86df0a909e1e22173334dbbc9b3a2b5c794e0676eb5c144dd08827a501f543d9ff5fe5ccad4049a4a63643d7cd8
+  languageName: node
+  linkType: hard
+
+"@pipiyo/analytics@workspace:.":
   version: 0.0.0-use.local
   resolution: "@pipiyo/analytics@workspace:."
   dependencies:
